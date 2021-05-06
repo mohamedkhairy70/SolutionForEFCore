@@ -26,7 +26,7 @@ namespace SamuraiApp.UI
         private static void GetSumurai(string _Name)
         {
             var _Sumurai = _context.Samurais.ToList();
-            Console.WriteLine($"{_Name}: Samurais is Count {_Sumurai.Count}");
+            Console.WriteLine($"{_Name}: Samurais  is Count {_Sumurai.Count}");
             foreach (var sumurai in _Sumurai)
             {
                 Console.WriteLine($"{sumurai.Name}");
