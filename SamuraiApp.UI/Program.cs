@@ -7,7 +7,7 @@ namespace SamuraiApp.UI
 {
     class Program
     {
-        private static SamuraiContext _context = new SamuraiContext();
+        private static readonly SamuraiContext _context = new();
         static void Main(string[] args)
         {
             _context.Database.EnsureCreated();
